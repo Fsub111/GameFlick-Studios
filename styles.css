@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Linear gradient background */
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    font-size: 24px;
+}
+
+main {
+    padding: 20px;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+#gallery img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid #444;
+    transition: transform 0.2s ease-in-out;
+    background: #fff;
+    border-radius: 8px;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+    border-color: #fff;
+}
+
+footer {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Linear Gradient on Preview Page */
+.preview-container {
+    text-align: center;
+    margin: 20px;
+    background: linear-gradient(145deg, #6a11cb, #2575fc);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.preview-container img {
+    max-width: 90%;
+    height: auto;
+    margin: 20px 0;
+    border: 2px solid #444;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+.comments {
+    margin: 20px 0;
+    text-align: left;
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+.comments textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.comments button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #2575fc;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comments button:hover {
+    background: #1e3c72;
+}
